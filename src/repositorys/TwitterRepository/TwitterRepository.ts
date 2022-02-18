@@ -21,6 +21,17 @@ class TwitterRepository {
       .then((resposta) => resposta && resposta.data)
       .catch((erro) => erro);
   };
+
+  obterDadosTwitterPorFiltro = async (filtro: string, twwetFields: string) => {
+    await clientTwitterInstance.v1.stream
+      .getStream("statuses/filter.json", { track: "JavaScript,TypeScript" })
+
+      .then((resposta) => resposta && resposta.data)
+      .catch((erro) => erro);
+    const sampleFilterv2 = await clientTwitterInstance.v2.getStream(
+      "tweets/sample/stream"
+    );
+  };
 }
 
 export default new TwitterRepository();
