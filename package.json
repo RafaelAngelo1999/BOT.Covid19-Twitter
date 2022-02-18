@@ -1,0 +1,31 @@
+{
+  "name": "bot-covid-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "build": "rm -rf ./dist/ && npm run tsc — project",
+    "start": "ts-node-dev src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "@types/config": "^0.0.41",
+    "@types/node": "^17.0.16",
+    "@types/twit": "^2.2.30",
+    "axios": "^0.26.0",
+    "config": "^3.3.7",
+    "dotenv": "^16.0.0",
+    "inversify": "^6.0.1",
+    "ts-node": "^10.5.0",
+    "twit": "^2.2.11",
+    "twitter-api-v2": "^1.11.0"
+  }
+}
