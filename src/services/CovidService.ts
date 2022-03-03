@@ -1,7 +1,11 @@
 import CovidRepository from "../repositorys/CovidRepository/CovidRepository";
 import CovidMapper from "../repositorys/CovidRepository/mappers/CovidMapper";
 import { CovidModel } from "../repositorys/CovidRepository/models/CovidModel";
-import { EMOJI_BRASIL, EMOJI_RELOGIO } from "../shared/constantes/Emoji";
+import {
+  EMOJI_BRASIL,
+  EMOJI_DADOS,
+  EMOJI_RELOGIO,
+} from "../shared/constantes/Emoji";
 
 class CovidService {
   async obterMensagemCovid(nomeSolicitante: string) {
