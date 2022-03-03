@@ -1,10 +1,13 @@
 import { TwitterApi } from "twitter-api-v2";
+import "dotenv/config";
 
-const clientTwitterInstance = new TwitterApi({
-  appKey: String(process.env.APP_KEY),
-  appSecret: String(process.env.APP_SECRET),
-  accessToken: String(process.env.ACCESS_TOKEN),
-  accessSecret: String(process.env.ACCESS_SECRET),
+const clientTwitterInstanceV1 = new TwitterApi({
+  appKey: String(process.env.BOT_CONSUMER_KEY),
+  appSecret: String(process.env.BOT_CONSUMER_SECRET),
+  accessToken: String(process.env.BOT_ACCESS_KEY),
+  accessSecret: String(process.env.BOT_ACCESS_TOKEN),
 });
 
-export default clientTwitterInstance;
+clientTwitterInstanceV1.readWrite;
+
+export default clientTwitterInstanceV1;

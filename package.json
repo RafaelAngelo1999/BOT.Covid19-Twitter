@@ -24,6 +24,7 @@
     "config": "^3.3.7",
     "dotenv": "^16.0.0",
     "inversify": "^6.0.1",
+    "moment": "^2.29.1",
     "ts-node": "^10.5.0",
     "twit": "^2.2.11",
     "twitter-api-v2": "^1.11.0"

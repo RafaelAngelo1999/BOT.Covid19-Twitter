@@ -12,14 +12,16 @@ class TwitterService {
     return await TwitterRepository.likePostagemPorId(idPostagem);
   }
 
-  async comentarioPostagemPorId(idPostagem: string) {
-    return await TwitterRepository.comentarioPostagemPorId(idPostagem);
+  async comentarioPostagemPorId(comentario: string, idPostagem: string) {
+    return await TwitterRepository.comentarioPostagemPorId(
+      comentario,
+      idPostagem
+    );
   }
 
-  //   async obterDadosTwitterPorFiltro(filtro: string, ) {
-  //     const dataConectada = await TwitterRepository.comentarioPostagemPorId(filtro);
-  //     dataConectada('data', retweet)
-  //   }
+  async obterDadosTwitterPorFiltro(filtro: string) {
+    return await TwitterRepository.obterDadosTwitterPorFiltro(filtro);
+  }
 }
 
 export default new TwitterService();
