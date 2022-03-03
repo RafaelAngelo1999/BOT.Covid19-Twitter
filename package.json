@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "tsc": "tsc",
-    "build": "tsc --build",
+    "build": "npm run tsc -project",
     "start": "ts-node-dev src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
