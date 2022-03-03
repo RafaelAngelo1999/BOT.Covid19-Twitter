@@ -30,5 +30,8 @@
     "moment": "^2.29.1",
     "ts-node": "^10.5.0",
     "twitter-api-v2": "^1.11.0"
+  },
+  "engines": {
+    "node": "16.x"
   }
 }
