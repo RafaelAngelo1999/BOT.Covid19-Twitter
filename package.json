@@ -4,11 +4,8 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "tsc": "tsc",
     "start": "node dist/index.js",
-    "build": "tsc",
-    "watch-node": "nodemon dist/index.js",
-    "watch-ts": "tsc - w"
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
