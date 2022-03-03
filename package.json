@@ -5,10 +5,9 @@
   "main": "dist/index.js",
   "scripts": {
     "tsc": "tsc",
-    "build": "tsc --build",
-    "start": "ts-node-dev src/index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "tsc",
+    "start": "node build/index.js",
+    "build": "tsc",
+    "postinstall": "npm run build",
     "watch-node": "nodemon dist/index.js",
     "watch-ts": "tsc - w"
   },
@@ -17,7 +16,7 @@
   "license": "ISC",
   "devDependencies": {
     "ts-node-dev": "^1.1.8",
-    "typescript": "^4.5.5"
+    "typescript": "^4.6.2"
   },
   "dependencies": {
     "@types/config": "^0.0.41",
