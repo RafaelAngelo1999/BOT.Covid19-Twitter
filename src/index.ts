@@ -14,7 +14,6 @@ const start = async () => {
     handleAcoesTwitte(eventData)
   );
   await stream.connect({ autoReconnect: true, autoReconnectRetries: Infinity });
-  await stream.reconnect();
   stream.keepAliveTimeoutMs = Infinity;
 };
 
