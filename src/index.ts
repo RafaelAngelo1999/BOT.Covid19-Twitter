@@ -1,4 +1,4 @@
-import { ETwitterStreamEvent, TweetStream } from "twitter-api-v2";
+import { ETwitterStreamEvent } from "twitter-api-v2";
 import TwitterService from "./services/TwitterService";
 import "dotenv/config";
 import CovidService from "./services/CovidService";
@@ -13,8 +13,8 @@ const start = async () => {
   stream.on(ETwitterStreamEvent.Data, (eventData: any) =>
     handleAcoesTwitte(eventData)
   );
-  stream.keepAliveTimeoutMs = Math.pow(999, 100);
   await stream.connect({ autoReconnect: true, autoReconnectRetries: Infinity });
+  stream.keepAliveTimeoutMs = +Infinity;
 };
 
 const handleAcoesTwitte = async (eventData: any) => {
