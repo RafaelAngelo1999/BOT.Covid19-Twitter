@@ -3,10 +3,12 @@
 ![](img/bot.gif)
 
 
-[@BOT_COVID_BR](https://twitter.com/BOT_COVID_BR) é um bot desenvolvido para fornecer informações atualizadas de casos de Corona Virus no Brasil, o bot utiliza da api externa [COVID-19 Brazil API](https://covid19-brazil-api.now.sh/) para fornecerer essas informações
+O [@BOT_COVID_BR](https://twitter.com/BOT_COVID_BR) é um bot desenvolvido para fornecer informações atualizadas de casos de Corona Virus no Brasil, o bot utiliza da api externa [COVID-19 Brazil API](https://covid19-brazil-api.now.sh/) para fornecerer essas informações
 ### Bibliotecas externas utilizadas
-* [twitter-api-v2](https://www.npmjs.com/package/twitter-api-v2)
-* [dotenv](https://www.npmjs.com/package/dotenv)
+* [twitter-api-v2](https://www.npmjs.com/package/twitter-api-v2) : API Twitter
+* [dotenv](https://www.npmjs.com/package/dotenv) : Configuração de variaveis de ambiente
+* [axios](https://www.npmjs.com/package/axios) : Requisições HTTP
+* [moment](https://www.npmjs.com/package/moment) : Tratamento de objetos Date
 ### Instalação
 
 BOT Twitter requer [Node.js](https://nodejs.org/) para ser executado
