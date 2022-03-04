@@ -3,8 +3,10 @@ import TwitterService from "./services/TwitterService";
 import "dotenv/config";
 import CovidService from "./services/CovidService";
 
+let stream = undefined;
+
 const start = async () => {
-  const stream = await TwitterService.obterDadosTwitterPorFiltro(
+  stream = await TwitterService.obterDadosTwitterPorFiltro(
     String(process.env.PESQUISA)
   );
 
