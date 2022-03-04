@@ -2,7 +2,8 @@
 
 ![](img/bot.gif)
 
-BOT Twitter é um bot desenvolvido para fornecer informações atualizadas de casos de Corona Virus no Brasil, o bot utiliza da api externa [COVID-19 Brazil API](https://covid19-brazil-api.now.sh/)  para fornecerer essas informações
+
+[@BOT_COVID_BR](https://twitter.com/BOT_COVID_BR) é um bot desenvolvido para fornecer informações atualizadas de casos de Corona Virus no Brasil, o bot utiliza da api externa [COVID-19 Brazil API](https://covid19-brazil-api.now.sh/) para fornecerer essas informações
 ### Bibliotecas externas utilizadas
 * [twitter-api-v2](https://www.npmjs.com/package/twitter-api-v2)
 * [dotenv](https://www.npmjs.com/package/dotenv)
@@ -30,7 +31,7 @@ BOT_ACCESS_TOKEN=KSDbQpMR9iBiwADxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 No mesmo arquivo *.env* adicione a frase/palavra desejada
 ```
-PESQUISA=SUACHAVEDEFILTRO  //EX: @bBOT_COVID_BR
+PESQUISA=SUACHAVEDEFILTRO  //EX: @BOT_COVID_BR
 URL_API_COVID=https://covid19-brazil-api.now.sh/api/report/v1
 ```
 ### Editando comentario 
