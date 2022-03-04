@@ -11,7 +11,7 @@ const start = async () => {
   stream.on(ETwitterStreamEvent.Data, (eventData: any) =>
     handleAcoesTwitte(eventData)
   );
-  stream.autoReconnect = true;
+  await stream.connect({ autoReconnect: true, autoReconnectRetries: Infinity });
 };
 
 const handleAcoesTwitte = async (eventData: any) => {
