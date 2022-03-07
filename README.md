@@ -8,7 +8,7 @@ O [@BOT_COVID_BR](https://twitter.com/BOT_COVID_BR) é um bot desenvolvido para 
 * [twitter-api-v2](https://www.npmjs.com/package/twitter-api-v2) : API Twitter
 * [dotenv](https://www.npmjs.com/package/dotenv) : Configuração de variaveis de ambiente
 * [axios](https://www.npmjs.com/package/axios) : Requisições HTTP
-* [moment](https://www.npmjs.com/package/moment) : Tratamento de objetos Date
+* [moment](https://www.npmjs.com/package/moment) : Tratamento para tipo Date
 ### Instalação
 
 BOT Twitter requer [Node.js](https://nodejs.org/) para ser executado
